@@ -8,7 +8,16 @@
   </head>
   <body>
     <form action="">
-      <input type="email" placeholder="email" />
+      <datalist id="emaillist">
+        <option>arthur@gmail.com</option>
+      </datalist>
+      <input
+        list="emaillist"
+        title="Obs: somente dominio gmail"
+        type="email"
+        placeholder="email"
+        pattern=".+@gmail\.com\.br"
+      />
       <button type="submit">Enviar</button>
     </form>
   </body>
