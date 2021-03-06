@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        # <datalist>
+            -Lista de valores como sugestao a uma tag <input>
+            -valores sugestivos e nao obrigatorios
+            -usuarios poderao selecionar um dos valores ou colocar um valor diferente da sugestao
+
+        <datalist id="fruitsdata">
+            <option>apple</option>
+            <option>banana</option>
+            <option>mango</option>
+            <option>orange</option>
+            <option>cherry</option>
+        </datalist>
+
+        #list 
+            -Recebe como valor o id de um <datalis> residente no mesmo documento
+
+        #Tipos de input suportados
+
+            -text,search,url,tel,email,date,month,week,time,datetime-local,number,range e color
+
+            #Valores de datalist que nao sao compativeis com o tipo do <input>
+            nao serao apresentados
+        
+        #Tipos de input nao suportados 
+            
+            -hidden, password, checkbox, radio, file, ou qualquer tipo de button
+
+    -->
+
+    <input type="text" list="fruitsdata" placeholder="Choose a fruit">
+    <input type="color" list="color">
+
+    <datalist id="color">
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+    </datalist>
+   
+
+    <datalist id="fruitsdata">
+        <option>apple</option>
+        <option>banana</option>
+        <option>mango</option>
+        <option>orange</option>
+        <option>cherry</option>
+    </datalist>
+</body>
+</html>
