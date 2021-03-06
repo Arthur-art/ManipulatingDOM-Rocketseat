@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="display: flex; justify-content: center; flex-direction: column;">
 
     <!--
         <input>
@@ -19,8 +19,36 @@
         -type
         -name
         -id
+
+        Atributos comuns
+
+            -autocomplete
+            -autofocus
+            -disabled ou readonly (quase todos)
+            -value
+            //linkar um inputo a algum form:
+            -form (quase todos)
+            //input obrigatorio
+            -required (quase todos)
+            -placeholder (password,search,tel,text,url)
     -->
     
-    <input type="date" name="" id="">
+    <h2>type="email" autocomplete="email":</h2>
+    <input type="email" autocomplete="email">
+    <h2>type="type" autofocus:</h2>
+    <input type="type" autofocus>
+    <h2>type="text" disabled:</h2>
+    <input type="text" disabled>
+    <h2>type="text" value="random" disabled:</h2>
+    <input type="text" value="random" disabled>
+    <h2>type="text" name="nameUser" form="namesUsers":</h2>
+    <form id="namesUsers"></form>
+    <input type="text" name="nameUser" form="namesUsers">
+    <h2>type="text" required:</h2>
+    <input type="text" required>
+    <h2>type="email" placeholder="email" autocomplete="email":</h2>
+    <input type="email" placeholder="email" autocomplete="email">
+
+
 </body>
 </html>
