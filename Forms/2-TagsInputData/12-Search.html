@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+    <input type="search">
+
+    -para campos de busca
+    -é igual ao campo do tipo "text" mas podera ser um pouco diferente 
+    dependendo do user agent
+
+    #Atributos
+
+    -list / <datalist>
+    -pattern="[0-9]"
+    -aria-label
+-->
+
+    <datalist id="searchterms">
+      <option>Mac</option>
+      <option>Dell</option>
+      <option>Sansung</option>
+    </datalist>
+
+    <form action="">
+      <input
+        type="search"
+        name=""
+        id=""
+        list="searchterms"
+        aria-label="campo de pesquisa"
+      />
+      <button>Pesquisar</button>
+    </form>
+
+    <form action="">
+      <input type="search" name="" id="" pattern="[0-9]{2}" title="somente pesquisas por id" />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
