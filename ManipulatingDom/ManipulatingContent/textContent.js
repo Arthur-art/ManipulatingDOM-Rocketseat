@@ -1,5 +1,4 @@
 //manipulando elemento
 //text content
 const element = document.querySelector('#Content');
-
-element.textContent = "Your blog"
+element.textContent ='Alterado via Js';
